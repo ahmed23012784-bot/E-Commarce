@@ -4,14 +4,14 @@ import Link from "next/link";
 export default function Home() {
   return<>
   
-   <div className=" flex flex-col items-center justify-between gap-8 my-20">
+   <div className=" flex flex-col items-center  justify-between gap-8 my-20">
        <h1 className="text-center text-7xl font-bold lineeh">Welcome to ShopMart </h1>
 
         <p className="text-center text-xl font-bold linee capitalize  ">Experience effortless shopping from home with Shopmart, where convenience meets quality.</p>
     
     
     
-         <div className="flex items-center justify-center gap-4">
+         <div className="flex items-center p-0 md:p-20 justify-center gap-4">
 
            <Link href={'/products'}>
               

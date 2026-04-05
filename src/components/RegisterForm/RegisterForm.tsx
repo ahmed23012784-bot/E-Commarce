@@ -87,20 +87,20 @@ defaultValues: {
 
 
 return <>
-    <Card className="w-full sm:max-w-md bg-gray-100  ">
+    <Card className="  w-full sm:max-w-md bg-gray-100  p-4 sm:p-6 ">
 
-      <CardHeader className=" flex  items-center justify-center">
+      <CardHeader className=" flex   items-center justify-center">
          <CardDescription className='bg-black text-white w-9 h-9 text-center  rounded-lg hover:text-black hover:bg-white  hover:border-2 border-black capitalize font-bold text-3xl'>
            S
           </CardDescription>
 
-        <CardTitle className=" text-4xl lineeh text-center">Register Now</CardTitle>
+        <CardTitle  className=" text-4xl lineeh text-center">Register Now</CardTitle>
 
       </CardHeader>
 
       <CardContent>
 
-        <form onSubmit={handleSubmit(submite)}>
+        <form onSubmit={handleSubmit(submite)} className="space-y-4">
             <FieldGroup>
 
             
@@ -202,15 +202,20 @@ return <>
       </CardContent>
 
       <CardFooter>
-        <Field orientation="horizontal">
-          <Button  onClick={()=>reset()} type="button" variant="outline">
+
+        
+        <div className="flex flex-col sm:flex-row gap-3 w-full">
+
+
+          <Button onClick={()=>reset()} type="button" variant="outline">
             Reset
           </Button>
-          <Button onClick={handleSubmit(submite)} disabled={isloading} type="submit" >
+          <Button  onClick={handleSubmit(submite)} disabled={isloading} type="submit" >
             {isloading&&<Loader2 className=" animate-spin"/>}
             Submit
           </Button>
-        </Field>
+             </div>
+        
        
       </CardFooter>
        <CardDescription className=" text-center">
