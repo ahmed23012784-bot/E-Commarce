@@ -84,6 +84,7 @@ export default async function Navbar() {
   
 
 <div>
+
     <NavigationMenu>
   <NavigationMenuList>
     <NavigationMenuItem>

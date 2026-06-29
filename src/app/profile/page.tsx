@@ -16,7 +16,7 @@ const decoded = jwtDecode<{id : string}>(session?.token || "")
 
 
    
-    <h1 className='text-4xl lineeh font-bold '> Hello, {session?.user.name}</h1> 
+    <h1 className='text-4xl lineeh font-bold mt-20'> Hello, {session?.user.name}</h1> 
   <p className='text-xl linee font-bold  py-5'>  Welcome to ShopMart! You have successfully signed in with {session?.user.email}. Happy shopping 🛒</p>
 
 
